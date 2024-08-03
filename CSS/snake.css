@@ -1,0 +1,115 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url(../bg.jpg);
+    height: 100vh;
+    background-size: 100vw auto 100vh;
+    background-repeat: no-repeat;/* It strict the repeatition of our image if it's small */
+/*     display:flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container{
+    width:90%;
+    height:95%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#startBtn{
+    width:60px;
+    height:40px;
+    font-size: 1rem;
+    position: absolute;
+    top:20px;
+    right:30px;
+    border: 5px solid #ababab;
+    border-radius: 20px;
+    background-color: #ababab;
+    color:black;
+    border: 3px solid rgb(61, 55, 55);
+    font-family: 'Protest Revolution', sans-serif;
+    box-shadow: 0 0 15px 0 red ;
+    color:rgb(215, 75, 98);
+}
+#startBtn:active{
+    background-color: black;
+    color:blue;
+}
+
+#board{
+    background: linear-gradient(to bottom right,pink , rgb(154, 154, 230));
+    height:80%;
+    width:100%;
+    margin-left: 10px;
+    display:grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    border-radius: 10px;
+    border: 2px solid #ababab;
+  
+}
+
+.head{
+    background:linear-gradient(gold,red);
+    box-shadow: 0 0 6px 0 yellow;
+    border-radius: 10px;
+
+
+}
+.snake{
+    background-color: purple;
+    box-shadow: 0 0 5px 0 blue inset;
+    border-radius: 10px;
+    border: 2px solid rgb(54, 50, 50);
+}
+.food{
+    background-color: chartreuse;
+    box-shadow: 0 0 20px 0  rgb(237, 3, 159)  ;
+    border-radius: 1px;
+}
+
+
+#scoreBox{
+    position: absolute;
+    top:20px;
+    left:30px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Protest Revolution', sans-serif;
+    color:blue;
+    
+}
+
+#hiScoreBox{
+    position: absolute;
+    top:60px;
+    left:30px;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Protest Revolution', sans-serif;
+    color:red;
+} 
+
+@media  screen and (min-width:500px){
+    #scoreBox{
+        left:150px;
+    }
+    #hiScoreBox{
+        left:150px;
+    }
+    #startBtn{
+        right:100px;
+        width:80px;
+        height:60px;
+        
+    }
+}
