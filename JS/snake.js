@@ -4,7 +4,7 @@ let inputDir = {x:0 , y:0};// inputDir is an object that represents the directio
 let moveSound = new Audio('move.mp3');   // it creates an audio element that loads and prepares to play the specified audio file.   
 let foodSound = new Audio('food.mp3');
 let gameoverSound = new Audio('gameover.mp3');
-let musicSound = new Audio('Naat.mp3');
+let musicSound = new Audio('NaatZaifaThii.mp3');
 
             /// Methods of audio object...
                             // // Play the move sound
