@@ -7,10 +7,10 @@
 }
 
 .body{
-    background: url(../bg.jpg);
+    background: url(../good.jpg);
     height: 100vh;
     background-size: 100vw auto 100vh;
-    background-repeat: no-repeat;/* It strict the repeatition of our image if it's small */
+    background-repeat: repeat;/* It strict the repeatition of our image if it's small */
 /*     display:flex;
     justify-content: center;
     align-items: center; */
@@ -31,22 +31,20 @@
     position: absolute;
     top:20px;
     right:30px;
-    border: 5px solid #ababab;
-    border-radius: 20px;
-    background-color: #ababab;
-    color:black;
-    border: 3px solid rgb(61, 55, 55);
-    font-family: 'Protest Revolution', sans-serif;
-    box-shadow: 0 0 15px 0 red ;
-    color:rgb(215, 75, 98);
+    border: 3px solid #333;
+    border-radius: 25px;
+    background-color: #ff5722;
+    color:#fff;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+    transition: background-color 0.3s, color 0.3s;
 }
 #startBtn:active{
-    background-color: black;
-    color:blue;
+    background-color: #d84315;
+    color: #fff;
 }
 
 #board{
-    background: linear-gradient(to bottom right,pink , rgb(154, 154, 230));
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
     height:80%;
     width:100%;
     margin-left: 10px;
@@ -59,22 +57,22 @@
 }
 
 .head{
-    background:linear-gradient(gold,red);
-    box-shadow: 0 0 6px 0 yellow;
+    background: linear-gradient(to bottom right, #ffeb3b, #f44336);
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.8);
     border-radius: 10px;
 
 
 }
 .snake{
-    background-color: purple;
-    box-shadow: 0 0 5px 0 blue inset;
+    background-color: #9c27b0;
+    box-shadow: 0 0 8px rgba(63, 81, 181, 0.6) inset;
     border-radius: 10px;
-    border: 2px solid rgb(54, 50, 50);
+    border: 2px solid #7b1fa2;
 }
 .food{
-    background-color: chartreuse;
-    box-shadow: 0 0 20px 0  rgb(237, 3, 159)  ;
-    border-radius: 1px;
+    background-color: #00e676;
+    box-shadow: 0 0 20px rgba(255, 64, 129, 0.8);
+    border-radius: 50%;
 }
 
 
